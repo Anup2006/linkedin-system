@@ -1,3 +1,36 @@
 spring:
   application:
     name: user-service
+
+  profiles:
+    active: local
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+server:
+  port: 8081
+
+#JWT configuration
+jwt:
+  secret:
+  expiration:
+  refresh-expiration:
+
+#AWS configuration
+aws:
+  access-key:
+  secret-key:
+  region:
+  s3:
+    bucket-name:
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
