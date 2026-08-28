@@ -1,4 +1,4 @@
-package com.linkedin.user_service.config;
+package com.linkedin.post_service.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

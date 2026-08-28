@@ -1,4 +1,4 @@
-package com.linkedin.user_service.service;
+package com.linkedin.post_service.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
