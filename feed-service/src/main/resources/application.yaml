@@ -28,7 +28,10 @@ spring:
                 type: java.util.HashMap
 
 server:
-  port: 8082
+  port: 8083
+
+feed:
+  max-size: 100
 
 user:
   service:

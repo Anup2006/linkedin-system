@@ -16,17 +16,17 @@ server:
 
 #JWT configuration
 jwt:
-  secret:
-  expiration:
-  refresh-expiration:
+  secret: VGhpc0lzQVNlY3VyZUpXVFNlY3JldEtleUZvckhTMjU2QWxnb3JpdGhtMTIzNDU2
+  expiration: 86400000
+  refresh-expiration: 604800000
 
 #AWS configuration
 aws:
-  access-key:
-  secret-key:
-  region:
+  access-key: YOUR_AWS_ACCESS_KEY
+  secret-key: YOUR_AWS_SECRET_KEY
+  region: eu-north-1
   s3:
-    bucket-name:
+    bucket-name: your-bucket-name
 
 
 management:

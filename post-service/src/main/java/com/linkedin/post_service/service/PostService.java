@@ -75,7 +75,7 @@ public class PostService {
     }
 
     public List<Post> getUserPosts(String userId) {
-        return postRepo.findByAuthorIdAndOrderByCreatedAtDesc(userId);
+        return postRepo.findByAuthorIdOrderByCreatedAtDesc(userId);
     }
 
 
@@ -138,7 +138,7 @@ public class PostService {
     }
 
     public List<Comment> getComments(String postId) {
-        return commentRepo.findByPostIdAndOrderByCreatedAtDesc(postId);
+        return commentRepo.findByPostIdOrderByCreatedAtDesc(postId);
     }
 
     public void deletePost(String postId, String userId) {

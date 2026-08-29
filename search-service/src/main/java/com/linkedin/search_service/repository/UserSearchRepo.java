@@ -9,9 +9,19 @@ import java.util.List;
 
 public interface UserSearchRepo extends ElasticsearchRepository<UserDocument,String> {
 
-    @Query("{\"multi_match\": {\"query\": \"?0\", "+
-            "\"fields\": [\"firstName\", \"lastName\", "+
-            "\"headline\", \"location\"]}}")
+    @Query("""
+        {
+          "multi_match": {
+            "query": "?0",
+            "fields": [
+              "firstName",
+              "lastName",
+              "headline",
+              "location"
+            ]
+          }
+        }
+    """)
     List<UserDocument> searchUsers(String query);
 
     List<UserDocument> findBySkillsContaining(String skill);

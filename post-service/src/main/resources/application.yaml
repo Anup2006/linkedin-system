@@ -16,11 +16,11 @@ server:
 
 #AWS configuration
 aws:
-  access-key:
-  secret-key:
-  region:
+  access-key: YOUR_AWS_ACCESS_KEY
+  secret-key: YOUR_AWS_SECRET_KEY
+  region: eu-north-1
   s3:
-    bucket-name:
+    bucket-name: your-bucket-name
 
 
 management:
